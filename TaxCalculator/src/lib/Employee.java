@@ -17,15 +17,9 @@ public class Employee {
 	private String lastName;
 	private String idNumber;
 	private String address;
-	
-	private int yearJoined;
-	private int monthJoined;
-	private int dayJoined;
-	private int monthWorkingInYear;
-	
+	private Date Joined;
 	private boolean isForeigner;
 	private ListGender gender;
-	private enum ListGender{
 		
 	private int monthlySalary;
 	private int otherMonthlyIncome;
@@ -37,18 +31,25 @@ public class Employee {
 	private List<String> childNames;
 	private List<String> childIdNumbers;
 	
-	public Employee(String employeeId, String firstName, String lastName, String idNumber, String address, int yearJoined, int monthJoined, int dayJoined, boolean isForeigner, ListGender gender) {
+	public Employee(String employeeId, String firstName, String lastName, String idNumber, String address, Date Joined, boolean isForeigner, ListGender gender) {
 		this.employeeId = employeeId;
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.idNumber = idNumber;
 		this.address = address;
-		this.yearJoined = yearJoined;
-		this.monthJoined = monthJoined;
-		this.dayJoined = dayJoined;
+		this.Joined = Joined;
 		this.isForeigner = isForeigner;
 		this.gender = gender;
 		
+		public ListGender gender() {
+			return gender;
+			
+		public Date getJoined(){
+			returnJoined;
+		}
+		public void setJoined(Date Joined){
+			this.Joined = Joined;
+		}
 		childNames = new LinkedList<String>();
 		childIdNumbers = new LinkedList<String>();
 	}
