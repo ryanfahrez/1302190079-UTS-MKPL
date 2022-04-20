@@ -4,8 +4,9 @@ import java.time.LocalDate;
 import java.time.Month;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Date;
 
-public class Employee {
+public class Employee extends Person{
 	
 	private Enum ListGender{
 	    Laki - laki,
@@ -13,10 +14,6 @@ public class Employee {
 	}
 
 	private String employeeId;
-	private String firstName;
-	private String lastName;
-	private String idNumber;
-	private String address;
 	private Date Joined;
 	private boolean isForeigner;
 	private ListGender gender;
